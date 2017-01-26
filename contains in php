@@ -1,0 +1,8 @@
+Usando uma funcao que atua como o contais em string usado em Java:
+
+if(strpos($retornoLancContabil, "@") !== false){
+    //existe o valor na variável
+}else{
+  //não existe o valor na variável
+}
+
