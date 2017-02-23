@@ -1,0 +1,33 @@
+<html>
+<body>
+<?php
+
+$ar = array('a' => "<a>sdjkladlah</a>", 'b' => 452447);
+$a = "<b>sdjkladlah</b>";
+
+breakpoint($a, false);
+breakpoint($ar);
+
+function breakpoint($data, $die = true) {
+    echo "<pre>";
+    if(!empty($data)) {
+        if(is_array($data)) {
+            foreach($data as $attr) {
+                var_dump(htmlentities($attr));
+            }
+        } else {
+            echo($data); //simples impressão.        
+            echo htmlentities($data);// mostra apenas o valor formatado no html.
+            or var_dump($data); // mostra tods os detalhes do valor recebido.
+        }
+    } else {
+        echo "data is empty!";
+    }
+    
+    if($die) {
+        die();
+    }
+}
+?>
+</body>
+</html>
