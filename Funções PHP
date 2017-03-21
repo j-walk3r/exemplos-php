@@ -1,0 +1,8 @@
+Atribuir variáveis Globais PHP e uso de caminhos de arquivos além do Require e include:
+
+exemplo :define("SITE_CRM_PATH", join(DIRECTORY_SEPARATOR, array(__DIR__)));
+uso:    define("nom_variavel", join(endereco_arquivo_+serarador , array(pasta onde o arquivo se enconta)));
+
+uso nos arquivos: include(nome da variavel global ."/subpasta_da_raiz/arquivo.php");
+
+
